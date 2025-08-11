@@ -1,118 +1,107 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.body {
+    background-color: #F9EBD2; /* Fondo principal */
+    color: #2E2B27; /* Texto principal oscuro */
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body {
-    background-color: #2980b9;
-    font-family: 'Roboto', sans-serif;
+h2 {
+    color: #7B4B2A; /* Marrón cálido para títulos */
+    font-weight: 600;
 }
 
 section {
-    padding: 5% 10%;
-}
-
-.t {
-    background-color: #f1c40f;
-    padding: 10px;
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    padding: 5%;
+    background-color: #F4D6B5; /* Fondo secciones */
+    margin: 3rem auto;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .banner {
-    height: 400px;
+    background-color: #F9EBD2;
     width: 100%;
-    overflow: hidden;
+    margin: 0% 0% 0% 16.5%;
 }
 
-.imgbanner {
-    height: 100%;
+.bannerIMG {
     width: 100%;
-    object-fit: cover;
-    color: #2980b9;
-    border-radius: 2px;
-}
-
-.imgbanner:hover {
-    color: #db1c07; 
-}
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f1c40f; 
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    border-top: 2px solid #ccc;
-    z-index: 1000;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.footer button {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
+    height: auto;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    flex: 1 1 auto; 
 }
 
-.footer button:hover {
-    background-color: #27ae60;
-}
-
-.timer-container {
-    text-align: center;
-}
-
-#timer {
-    font-size: 2.5em;
-    font-family: 'Orbitron', sans-serif;
-    background: black;
-    color: #27ae60;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.faq-item {
-    margin: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.faq-question {
-    width: 100%;
-    background: none;
+hr {
+    background-color: #C97E4B; /* Línea con color de acento */
+    height: 3px;
     border: none;
-    font-size: 1.1em;
-    text-align: left;
-    font-weight: bold;
+}
+
+.txtB {
+    color: #7B4B2A;
+    font-weight: 700;
+}
+.txtB:hover {
+    color: #C97E4B; /* Hover naranja tostado */
+}
+
+/* Formulario */
+.form-label {
+    color: #7B4B2A;
+}
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #C97E4B;
+}
+.btn-primary {
+    background-color: #A6583C;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #C97E4B;
+}
+
+/* Footer */
+footer {
+    background-color: #F4D6B5;
+    text-align: center;
+    padding: 1rem;
+    color: #7B4B2A;
+    margin-top: 2rem;
+}
+
+/* Botones del footer */
+footer a button {
+    background-color: #A6583C; /* mismo que .btn-primary */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    color: #2c3e50;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.arrow {
-    transition: transform 0.3s ease;
+footer a button:hover {
+    background-color: #C97E4B; /* color hover del resto */
+    transform: scale(1.05);
 }
 
-.arrow.rotated {
-    transform: rotate(180deg);
+footer a {
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
 
-.faq-answer {
-    max-height: 0;
-    overflow
+@media (max-width: 768px){
+
+.banner {
+    background-color: #F9EBD2;
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+}
+
 }

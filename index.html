@@ -1,79 +1,112 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cowboy bebop, la esperanza de algo profundo</title>
+    <title>cowboy bebop, el camino a algo profundo...?</title>
     <link rel="stylesheet" href="diseño.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class="body">
+    
     <section class="banner">
         <picture>
-            <img class="imgbanner" src="COWBOY BEBOP T2.png" alt="Banner Cowboy Bebop">
-            <p class="imgbanner">La obra, que se convierte en un nuevo género en sí misma, se llamará... COWBOY BEBOP.</p>
+            <img class="bannerIMG" src="COWBOY BEBOP T2.png" alt="espera infinita">
+            <h1 class="txtB">La obra, que se convierte en un nuevo género en sí misma, se llamará... COWBOY BEBOP.</h1>
         </picture>
     </section>
 
-    <section>
-        <div class="timer-container">
-            <h1 class="t">Tiempo para que salga la segunda temporada (creo)</h1>
-            <div id="timer">09:12:18</div>
-        </div>
+    <hr>
+
+    <section class="contador">
+        <h2>contador :) (no había presupuesto)</h2>
+        <div class="cont" id="contador">09:12:18</div>
     </section>
 
-    <section class="faq" id="faq">
-        <h2 class="t">Preguntas Frecuentes</h2>
-
-        <div class="faq-item">
-            <button class="faq-question">¿porque hicieron tanta musica para la banda sonora?
-                <i class="arrow">▼</i>
-            </button>
-            <div class="faq-answer">
-                <p>simplemente por amor al arte.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">¿cual es el nombre real de ed?
-                <i class="arrow">▼</i>
-            </button>
-            <div class="faq-answer">
-                <p>su nombre (No inventado) es Françoise Appledelhi.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">¿la pelicula es cannon?
-                <i class="arrow">▼</i>
-            </button>
-            <div class="faq-answer">
-                <p>segun el director wattanabe, la pelicula es cannon y pasa entre el capitulo 22 y 23.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
+    <section class="formulario">
+        <h2>recibe notificaciones!</h2>
         <form>
-            <h2 class="t">¡Para recibir notificaciones!</h2>
-            <label for="email">Registre su email para ser notificado con la nueva temporada (que no saldrá nunca):</label><br>
-            <input type="email" id="email" name="email" required placeholder="ed_cabra@tobmail.com"><br><br>
-
-            <label for="mensaje">Envíe una sugerencia para los nuevos capítulos (opcional):</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
-
-            <input type="submit" value="Enviar">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Registre su email para ser notificado con la nueva temporada (que no saldrá nunca):</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ed_cabra@tobmmail.com" required>
+              <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Envíe una sugerencia para los nuevos capítulos (opcional):</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">notificame!</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </section>
 
+    <section class="PyR">
+        <h2>preguntas frecuentes</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                  ¿por qué hicieron tanta música para la banda sonora?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">simplemente por amor al arte.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                  ¿cuál es el nombre real de ed?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">su nombre (no inventado) es Françoise Appledelhi.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                  ¿la película es canónica?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">según Watanabe, la película es canon y ocurre entre el capítulo 22 y 23.</div>
+              </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <a href="https://music.youtube.com/channel/UCFhMA8ygjzH72UqPf7PmlUg" target="_blank"><button> escucha buena musica (no como milo j)</button></a>
-        <a href="https://cowboybebop.store/" target="_blank"><button>mercancia oficial</button></a>
-        <a href="https://www.netflix.com/title/80001305" target="_blank"><button>ver cowboy bebop</button></a>
+    <footer>
+        <a href="https://www.netflix.com/title/80001305" target="_blank"><button>ver cowboy bebop</button></a> <a href="https://cowboybebop.store/" target="_blank"><button>merch</button></a> <a href="https://music.youtube.com/channel/UCFhMA8ygjzH72UqPf7PmlUg" target="_blank"><button>musica</button></a>
     </footer>
 
+    <script>
+        let totalSegundos = (9 * 3600) + (12 * 60) + 18; // 9h 12m 18s
+
+        function actualizarContador() {
+            if (totalSegundos <= 0) {
+                document.getElementById("contador").textContent = "00:00:00";
+                clearInterval(intervalo);
+                return;
+            }
+            totalSegundos--;
+
+            let hrs = String(Math.floor(totalSegundos / 3600)).padStart(2, '0');
+            let mins = String(Math.floor((totalSegundos % 3600) / 60)).padStart(2, '0');
+            let secs = String(totalSegundos % 60).padStart(2, '0');
+
+            document.getElementById("contador").textContent = `${hrs}:${mins}:${secs}`;
+        }
+
+        let intervalo = setInterval(actualizarContador, 1000);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

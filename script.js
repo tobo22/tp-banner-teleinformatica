@@ -17,7 +17,7 @@ function updateTimer() {
     let now = new Date();
     let diff = targetTime - now;
 
-    if (diff <= 0) {
+    if (diff >= 30) {
         document.getElementById("timer").textContent = "🎉 Felicidades, te quedaste esperando por un contador que no hacía nada 🎉";
         document.getElementById("timer").style.color = "red";
         document.getElementById("timer").style.fontSize = "1.5em";
