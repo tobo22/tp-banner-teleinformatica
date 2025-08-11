@@ -49,6 +49,8 @@ section {
     padding: 10px 0;
     border-top: 2px solid #ccc;
     z-index: 1000;
+    flex-wrap: wrap; /* Para que en móvil se acomoden los botones */
+    gap: 5px;
 }
 
 .footer button {
@@ -60,6 +62,7 @@ section {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    flex: 1 1 auto; /* Que los botones crezcan/encojan */
 }
 
 .footer button:hover {
@@ -111,14 +114,5 @@ section {
 
 .faq-answer {
     max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    padding: 0 10px;
-    background-color: white;
-    border-left: 5px solid #27ae60;
-}
-
-.faq-answer.visible {
-    max-height: 200px;
-    padding: 10px;
+    overflow
 }
