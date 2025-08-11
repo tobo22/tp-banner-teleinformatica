@@ -43,13 +43,13 @@ section {
     left: 0;
     width: 100%;
     background-color: #f1c40f; 
-    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 0;
     border-top: 2px solid #ccc;
     z-index: 1000;
-    flex-wrap: wrap; /* Para que en móvil se acomoden los botones */
+    display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
@@ -62,7 +62,7 @@ section {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    flex: 1 1 auto; /* Que los botones crezcan/encojan */
+    flex: 1 1 auto; 
 }
 
 .footer button:hover {
