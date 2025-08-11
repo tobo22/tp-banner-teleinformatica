@@ -1,0 +1,107 @@
+.body {
+    background-color: #F9EBD2; /* Fondo principal */
+    color: #2E2B27; /* Texto principal oscuro */
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: #7B4B2A; /* Marrón cálido para títulos */
+    font-weight: 600;
+}
+
+section {
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    padding: 5%;
+    background-color: #F4D6B5; /* Fondo secciones */
+    margin: 3rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.banner {
+    background-color: #F9EBD2;
+    width: 100%;
+    margin: 0% 0% 0% 16.5%;
+}
+
+.bannerIMG {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+hr {
+    background-color: #C97E4B; /* Línea con color de acento */
+    height: 3px;
+    border: none;
+}
+
+.txtB {
+    color: #7B4B2A;
+    font-weight: 700;
+}
+.txtB:hover {
+    color: #C97E4B; /* Hover naranja tostado */
+}
+
+/* Formulario */
+.form-label {
+    color: #7B4B2A;
+}
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #C97E4B;
+}
+.btn-primary {
+    background-color: #A6583C;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #C97E4B;
+}
+
+/* Footer */
+footer {
+    background-color: #F4D6B5;
+    text-align: center;
+    padding: 1rem;
+    color: #7B4B2A;
+    margin-top: 2rem;
+}
+
+/* Botones del footer */
+footer a button {
+    background-color: #A6583C; /* mismo que .btn-primary */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer a button:hover {
+    background-color: #C97E4B; /* color hover del resto */
+    transform: scale(1.05);
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 768px){
+
+.banner {
+    background-color: #F9EBD2;
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+}
+
+}
